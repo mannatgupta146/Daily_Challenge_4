@@ -11,5 +11,96 @@ html, body {
 
 #main {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    background-color: #212121;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #FFFFFF;
+}
+
+#main button{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+}
+
+nav button {
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3rem;
+    background: linear-gradient(145deg, #bfbfc3, #65656A);
+    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: linear-gradient(145deg, #9a9a9f, #65656A);
+    color: #000;
+}
+
+nav span{
+    color: red;
+}
+
+#hero{
+    padding: 0 3rem;
+}
+
+#hero-top{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#hero-top h2{
+    margin-bottom: 0.8rem;
+    color: red;
+}
+
+#hero-top h4{
+    font-weight: 100;
+}
+
+#hero-center{
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+#hero-center h1{
+    font-size: 6rem;
+}
+
+#hero-center h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#hero-bottom img{
+    height: 2rem;
+    background-color: #FFFFFF;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#hero-bottom p{
+    width: 35%;
+    font-size: 1.2rem;
+}
+
+#hero-right img{
+    height: 85%;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    background-color: black;
 }

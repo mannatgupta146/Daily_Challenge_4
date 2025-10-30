@@ -110,16 +110,114 @@ nav span{
     padding: 3rem;
 }
 
-#about h5{
+#about-top{
+    margin-bottom: 4rem;
+}
+
+#about-top h5{
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
-#about p{
+#about-top p{
     font-size: 4rem;
     width: 70%;
 }
 
-#about span{
+#about-top span{
     color: #757575;
+}
+
+#about-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 3rem;
+}
+
+.element{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 20%;
+    border-left: 1px solid white;
+    padding: 1rem 1rem 0;
+}
+
+.elem-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem-nav h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.elem-name h5{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #292929;
+}
+
+.box-bottom{
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 3rem;
+}
+
+.bar1{
+    position: absolute;
+    width: 90%;
+    background-color: #F46F31;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bar1{
+    background-color: #F46F31;
+}
+
+.bar1,.bar2,.bar3,.bar4{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bar2{
+    width: 75%;
+    background-color: #696969;
+}
+
+.bar3{
+    width: 90%;
+    background-color: #696969;
+}
+
+.bar4{
+    width: 85%;
+    background-color: #696969;
 }

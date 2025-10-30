@@ -224,3 +224,90 @@ nav span{
 .bar4{
     width: 85%;
 }
+
+#do{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#do-left, #do-right{
+    width: 50%;
+}
+
+#do-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#do-left h5{
+    font-weight: 500;
+}
+
+#dos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative; 
+}
+
+#dos h2{
+    font-size: 3rem;
+    opacity: 1;
+}
+
+#dos h2 span{
+    opacity: 0.5;
+}
+
+#dos h2:first-child,
+#dos h2:last-child {
+    filter: blur(1px); 
+}
+
+#do-right{
+    padding: 3rem;
+}
+
+#dr-top{
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem;
+}
+
+#dr-top img{
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+#dr-middle p{
+    border-bottom: 1px solid white;
+    padding: 1rem 0 1.5rem;
+}
+
+#dr-bottom{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#tags{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tags h4{
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    border-radius: 1.5rem;
+    border: 1px solid white;
+}
+
+#tags h4:hover{
+    transform: scale(1.1);
+    transition: all ease ease-out 0.3s;
+    cursor: pointer;
+    color: #f17458;
+    border: 1px solid #f4795d;
+}

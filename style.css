@@ -603,3 +603,128 @@ nav span{
 .highlight:hover {
     background-color: #e63e1f;
 }
+
+#testimonial {
+    background: radial-gradient(circle at top left, #0a0a0a 0%, #000 100%);
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+#theading {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+#theading h4 {
+    color: #777;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+#theading h2 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.testimonial-card {
+    background: rgba(20, 20, 20, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 1.8rem;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.testimonial-card:hover::before {
+    opacity: 1;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: rgba(255,255,255,0.15);
+    box-shadow: 0 0 35px rgba(255,255,255,0.08);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.profile img {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.profile h3 {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.profile p {
+    font-size: 0.7rem;
+    color: #888;
+    margin: 0.2rem 0 0 0;
+}
+
+.brand {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.8rem;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+.hero .brand { color: #00d4ff; }
+.vivo .brand { color: #1da1f2; }
+.asus .brand { color: #ff3c3c; }
+
+.review {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.7;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+.testimonial-card:hover img {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}

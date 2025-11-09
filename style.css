@@ -32,6 +32,7 @@ nav{
     align-items: center;
     padding: 1.5rem 2.5rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 nav button {
@@ -82,11 +83,10 @@ nav span{
 }
 
 #hero-center h1{
-    font-size: 7rem;
+    font-size: 8rem;
     font-family: f;
     font-weight: 100;
-    letter-spacing: 0.5rem;
-
+    letter-spacing: 0.8rem;
 }
 
 #hero-center h3{
@@ -375,9 +375,16 @@ nav span{
     margin-bottom: 1rem;
 }
 
+#al-heading h2:hover{
+    border: 1px solid #F46F31;
+    color: #F46F31;
+    transform: scale(1.1);
+    transition: all ease-in 0.2s;
+}
+
 #about-left p{
     opacity: 0.7;
-    width: 80%;
+    width: 80%; 
     margin: 0 auto;
     margin-bottom: 2rem;
 }
@@ -446,6 +453,7 @@ nav span{
 
 #pheading h4{
     font-weight: 400;
+    margin-bottom: 3rem;
 }
 
 #pheading h2{
@@ -516,7 +524,6 @@ nav span{
 }
 
 .pricing-card {
-    background: #1a1a1a;
     border-radius: 1rem;
     padding: 2rem;
     width: 23rem;
@@ -605,7 +612,6 @@ nav span{
 }
 
 #testimonial {
-    background: radial-gradient(circle at top left, #0a0a0a 0%, #000 100%);
     color: #fff;
     padding: 3rem 2rem;
 }
@@ -727,4 +733,180 @@ nav span{
 .testimonial-card:hover img {
     transform: scale(1.05);
     transition: 0.4s ease;
+}
+
+#stats{
+    padding: 4rem;
+}
+
+#stats h3{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+#sheading{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sheading h1{
+    font-size: 3rem;
+}
+
+#sheading h4{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.scroll-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+}
+
+.scroll-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear alternate-reverse infinite;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+.scroll-banner::before,
+.scroll-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.scroll-banner::before {
+    left: 0;
+    background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+
+.scroll-banner::after {
+    right: 0;
+    background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+
+#contact{
+    padding: 5rem 3rem;
+    text-align: center;
+}
+
+#cheading h1{
+    font-size: 6rem;
+    font-family: f;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+#contact button{
+    padding: 0.8rem 3.5rem;
+    border-radius: 0.7rem;
+}
+
+#contact button:hover{
+    color: white;
+    background-color: #f65d17;
+    transform: scale(1.1);
+    transition: all ease-out 0.4s;
+}
+
+#footer{
+    padding: 3rem;
+    background-color: #000000;
+}
+
+#ftop{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 7rem;
+    text-align: center;
+}
+
+#ftop h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#ftop h4{
+    font-weight: 100;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+#fmiddle{
+    position: relative;
+}
+
+#fmiddle h2{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#fmiddle h2 span{
+    color: #ff3c3c;
+}
+
+#fmiddle h1{
+    font-size: 23rem;
+    text-align: center;
+    opacity: 0.2;
+}
+
+#fmiddle p{
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    z-index: 99;
+    width: 70%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#fmiddle p span{
+    opacity: 0.5;
+}
+
+#footer img{
+    position: absolute;
+    top: 0;
+    left: 43%;
+    
+}
+
+#fend{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem 0;
+}
+
+#fend h4{
+    opacity: 0.5;
 }

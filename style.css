@@ -137,7 +137,6 @@ nav span{
     transform: translateY(-3px);
 }
 
-
 #about{
     padding: 3rem 3rem 2rem;
 }
@@ -455,6 +454,7 @@ nav span{
     margin: auto;
     font-weight: 600;
 }
+
 .pricing-toggle {
     margin-top: 1rem;
     display: flex;
@@ -462,7 +462,7 @@ nav span{
     align-items: center;
     gap: 1rem;
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .switch {
